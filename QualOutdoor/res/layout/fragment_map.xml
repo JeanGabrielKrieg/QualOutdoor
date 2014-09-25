@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res/com.qualoutdoor.recorder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <com.qualoutdoor.recorder.map.ColoredScale
+            android:id="@+id/scale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="0.7"
+            android:background="@color/transparent"
+            custom:endColor="@color/red"
+            custom:label="asu"
+            custom:labelColor="@color/white"
+            custom:labelHeight="18dp"
+            custom:maxLabel="31"
+            custom:minLabel="0"
+            custom:showText="true"
+            custom:startColor="@color/yellow" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

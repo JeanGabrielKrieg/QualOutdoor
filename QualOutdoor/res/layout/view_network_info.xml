@@ -1,0 +1,8 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/network_text_view" 
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:text="@string/network_info"
+	android:gravity="center_vertical|center_horizontal"
+    android:padding="@dimen/ui_spacing_half"
+	android:textColor="@color/android_darkgray" />

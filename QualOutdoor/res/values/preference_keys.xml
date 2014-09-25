@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- These are the keys used to store the shared preferences -->
+    <string name="pref_key_notification">com.qualoutdoor.recorder.PREF_KEY_NOTIFICATION</string>
+    <string name="pref_key_force_display_refresh">com.qualoutdoor.recorder.PREF_KEY_FORCE_DISPLAY_REFRESH</string>
+    <string name="pref_key_display_refresh_rate">com.qualoutdoor.recorder.PREF_KEY_DISPLAY_REFRESH_RATE</string>
+    <string name="pref_key_sampling_rate">com.qualoutdoor.recorder.PREF_KEY_DISPLAY_SAMPLING_RATE</string>
+    <string name="pref_key_sample_history">com.qualoutdoor.recorder.PREF_KEY_SAMPLE_HISTORY</string>
+    <string name="pref_key_automatic_data_upload">com.qualoutdoor.recorder.PREF_KEY_AUTOMATIC_DATA_UPLOAD</string>
+    <string name="pref_key_minimum_upload_size">com.qualoutdoor.recorder.PREF_KEY_MINIMUM_UPLOAD_SIZE</string>
+    <string name="pref_key_network_policy">com.qualoutdoor.recorder.PREF_KEY_NETWORK_POLICY</string>
+    <string name="pref_key_protocol">com.qualoutdoor.recorder.PREF_KEY_PROTOCOL</string>
+    <string name="pref_key_sample_cell_id">com.qualoutdoor.recorder.PREF_KEY_SAMPLE_CELL_ID</string>
+    <string name="pref_key_sample_signal_strength">com.qualoutdoor.recorder.PREF_KEY_SAMPLE_SIGNAL_STRENGTH</string>
+    <string name="pref_key_sample_call">com.qualoutdoor.recorder.PREF_KEY_SAMPLE_CALL</string>
+    <string name="pref_key_sample_upload">com.qualoutdoor.recorder.PREF_KEY_SAMPLE_UPLOAD</string>
+    <string name="pref_key_sample_download">com.qualoutdoor.recorder.PREF_KEY_SAMPLE_DOWNLOAD</string>
+    <!-- These are values of some preferences -->
+    <string name="value_network_policy_wifi_only">com.qualoutdoor.recorder.VALUE_NETWORK_POLICY_WIFI_ONLY</string>
+    <string name="value_network_policy_allow_3G">com.qualoutdoor.recorder.VALUE_NETWORK_POLICY_ALLOW_3G</string>
+    <string name="pref_default_network_policy">@string/value_network_policy_wifi_only</string>
+    <!-- Protocols (as defined in GlobalConstants.java) -->
+    <string name="upload_protocol_http">1</string>
+    <string name="upload_protocol_ftp">2</string>
+    <string name="pref_default_protocol">@string/upload_protocol_http</string>
+
+    <string-array name="pref_list_values_protocol">
+        <item>@string/upload_protocol_http</item>
+        <item>@string/upload_protocol_ftp</item>
+    </string-array>
+
+</resources>

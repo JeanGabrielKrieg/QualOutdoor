@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="(Location updated as often as possible)"
+            style="@style/ListItem"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:id="@+id/table"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <!-- Latitude -->
+            <TableRow>
+                <TextView
+                    android:text="@string/latitude"
+                    style="@style/ListItem"/>
+                <TextView
+                    android:id="@+id/fragment_location_latitude"
+                    style="@style/ListItem"
+                    android:text=""
+                    android:gravity="right"/>
+            </TableRow>
+            <!-- Longitude -->
+            <TableRow>
+                <TextView
+                    android:text="@string/longitude"
+                    style="@style/ListItem"/>
+                <TextView
+                    android:id="@+id/fragment_location_longitude"
+                    style="@style/ListItem"
+                    android:text=""
+                    android:gravity="right"/>
+            </TableRow>
+            <!-- Altitude -->
+            <TableRow>
+                <TextView
+                    android:text="@string/altitude"
+                    style="@style/ListItem"/>
+                <TextView
+                    android:id="@+id/fragment_location_altitude"
+                    style="@style/ListItem"
+                    android:text=""
+                    android:gravity="right"/>
+            </TableRow>
+            <!-- Speed -->
+            <TableRow>
+                <TextView
+                    android:text="@string/speed"
+                    style="@style/ListItem"/>
+                <TextView
+                    android:id="@+id/fragment_location_speed"
+                    style="@style/ListItem"
+                    android:text=""
+                    android:gravity="right"/>
+            </TableRow>
+            <!-- Accuracy -->
+            <TableRow>
+                <TextView
+                    android:text="@string/accuracy"
+                    style="@style/ListItem"/>
+                <TextView
+                    android:id="@+id/fragment_location_accuracy"
+                    style="@style/ListItem"
+                    android:text=""
+                    android:gravity="right"/>
+            </TableRow>
+            <!-- Time -->
+            <TableRow>
+                <TextView
+                    android:text="@string/time"
+                    style="@style/ListItem"/>
+                <TextView
+                    android:id="@+id/fragment_location_time"
+                    style="@style/ListItem"
+                    android:text=""
+                    android:gravity="right"/>
+            </TableRow>
+            <!-- Provider -->
+            <TableRow>
+                <TextView
+                    android:text="@string/provider"
+                    style="@style/ListItem"/>
+                <TextView
+                    android:id="@+id/fragment_location_provider"
+                    style="@style/ListItem"
+                    android:text=""
+                    android:gravity="right"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

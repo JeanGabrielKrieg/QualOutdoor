@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ColoredScale">
+        <attr name="label" format="string" />
+        <attr name="minLabel" format="string" />
+        <attr name="maxLabel" format="string" />
+        <attr name="labelColor" format="color" />
+        <attr name="startColor" format="integer" />
+        <attr name="endColor" format="integer" />
+        <attr name="graduationStartColor" format="color" />
+        <attr name="graduationEndColor" format="color" />
+        <attr name="labelHeight" format="dimension" />
+        <attr name="startValue" format="float" />
+        <attr name="endValue" format="float" />
+        <attr name="graduationStep" format="float" />
+        <attr name="showText" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ViewCellInfo">
+        <attr name="connectedBackgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="SeekBarPreference">
+        <attr name="minValue" format="reference|integer"></attr>
+        <attr name="maxValue" format="reference|integer"></attr>
+        <attr name="unitsRight" format="reference|string"></attr>
+        <attr name="unitsLeft" format="reference|string"></attr>
+        <attr name="interval" format="reference|integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="HighChartView">
+        <attr name="chartTitle" format="reference|string" /> <!-- The title string -->
+        <attr name="chartSubTitle" format="reference|string" /> <!-- The subtitle string -->
+        <attr name="xAxisTitle" format="reference|string" /> <!-- The title on the x-axis -->
+        <attr name="yAxisTitle" format="reference|string" /> <!-- The title on the y-axis -->
+        <attr name="xAxisLabelUnit" format="reference|string" /> <!-- The label to add to each value on the x-axis -->
+        <attr name="yAxisLabelUnit" format="reference|string" /> <!-- The label to add to each value on the y-axis -->
+        <attr name="yAxisMax" format="reference|string" /> <!-- The y axis max value -->
+        <attr name="yAxisMin" format="reference|string" /> <!-- The y axis min value -->
+    </declare-styleable>
+
+</resources>

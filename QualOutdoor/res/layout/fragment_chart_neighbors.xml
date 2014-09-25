@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qualoutdoor.recorder.charting.BarChartView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chart="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    chart:chartTitle="Neighbors Cells"
+    chart:yAxisTitle="RSSI (dBm)"
+    chart:yAxisMin="-140"/>

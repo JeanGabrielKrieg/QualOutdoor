@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Define the background style for a selected item in the navigation drawer -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:color="@color/white"/>
+    <item android:color="@color/android_darkgray"/>
+    
+</selector>

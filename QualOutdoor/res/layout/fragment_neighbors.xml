@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/neighbors_count"
+            style="@style/ListItem"/>
+        <TextView
+            android:id="@+id/neighbors_count_value"
+            style="@style/ListItem"
+            android:text=""
+            android:gravity="right|center_vertical"/>
+    </FrameLayout>
+
+    <ExpandableListView
+        android:id="@+id/neighbors_cell_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/DividedList">
+    </ExpandableListView>
+    
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Define the text color style for a selected item in the navigation drawer -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_checked="true">
+		<shape>
+			<solid android:color="@color/nav_drawer_selected_background" />
+		</shape>
+	</item>
+
+	<item>
+		<shape>
+			<solid android:color="@color/nav_drawer_not_selected_background" />
+		</shape>
+	</item>
+</selector>

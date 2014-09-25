@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/ui_spacing_half"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingTop="@dimen/ui_spacing_half" >
+
+        <TextView
+            android:id="@+id/view_cell_info_cid_type"
+            style="@style/CellInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="@string/cell_info_empty" />
+
+        <TextView
+            android:id="@+id/view_cell_info_rssi"
+            style="@style/CellInfoValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="@string/cell_info_empty" />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/ui_spacing_half"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingTop="@dimen/ui_spacing_half"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <TextView
+                style="@style/CellInfoTitle"
+                android:text="@string/cell_info_mcc" />
+
+            <TextView
+                style="@style/CellInfoTitle"
+                android:text="@string/cell_info_mnc" />
+
+            <TextView
+                android:id="@+id/view_cell_info_lac_tac"
+                style="@style/CellInfoTitle" />
+
+            <TextView
+                android:id="@+id/view_cell_info_psc_pci"
+                style="@style/CellInfoTitle" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/view_cell_info_mcc_value"
+                style="@style/CellInfoValue"
+                android:text="@string/cell_info_empty" />
+
+            <TextView
+                android:id="@+id/view_cell_info_mnc_value"
+                style="@style/CellInfoValue"
+                android:text="@string/cell_info_empty" />
+
+            <TextView
+                android:id="@+id/view_cell_info_lac_tac_value"
+                style="@style/CellInfoValue" />
+
+            <TextView
+                android:id="@+id/view_cell_info_psc_pci_value"
+                style="@style/CellInfoValue" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

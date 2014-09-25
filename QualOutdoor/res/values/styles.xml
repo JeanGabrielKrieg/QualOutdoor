@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme, dependent on API level. This theme is replaced 
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices. -->
+    <style
+        name="AppBaseTheme"
+        parent="Theme.AppCompat.Light">
+        <!-- Theme customizations available in newer API levels can go in 
+            res/values-vXX/styles.xml, while customizations related to backward-compatibility 
+            can go here. -->
+    </style>
+
+    <!-- Application theme. -->
+    <style
+        name="AppTheme"
+        parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level 
+            can go here. -->
+    </style>
+
+
+    <style
+        name="ListItem"
+        parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">@dimen/min_touch_size</item>
+        <item name="android:paddingLeft">@dimen/activity_margin</item>
+        <item name="android:paddingRight">@dimen/activity_margin</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style
+        name="ListHeader"
+        parent="@style/ListItem">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DividedList">
+        <item name="android:divider">@color/android_gray</item>
+        <item name="android:dividerHeight">@dimen/divider_weight</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_weight</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/ui_spacing_half</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:background">@drawable/button_background_selector</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="CellInfoTable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:stretchColumns">1</item>
+    </style>
+
+    <style
+        name="CellInfoValue"
+        parent="@android:style/TextAppearance.Small">
+        <item name="android:gravity">center</item>
+    </style>
+    <style
+        name="CellInfoTitle"
+        parent="@style/CellInfoValue">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

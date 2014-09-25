@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qualoutdoor.recorder.MainActivity" >
+
+    <item
+        android:id="@+id/network_info"
+        android:orderInCategory="1"
+        android:title="@string/network_info"
+        app:actionLayout="@layout/view_network_info"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_record"
+        android:orderInCategory="10"
+        android:title="@string/action_start_record"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_upload"
+        android:icon="@drawable/upload"
+        android:orderInCategory="11"
+        android:title="@string/action_upload"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_settings"
+        android:alpha="125"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="110"
+        android:title="@string/action_help"
+        app:showAsAction="never"/>
+
+</menu>

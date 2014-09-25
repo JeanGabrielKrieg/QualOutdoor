@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout android:id="@+id/fragment_test_linear_layout"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<com.qualoutdoor.recorder.telephony.ViewCellInfo
+			android:id="@+id/cell_info" android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</com.qualoutdoor.recorder.telephony.ViewCellInfo>
+		<com.qualoutdoor.recorder.telephony.ViewCellInfo
+			android:id="@+id/cell_info" android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</com.qualoutdoor.recorder.telephony.ViewCellInfo>
+		<com.qualoutdoor.recorder.telephony.ViewCellInfo
+			android:id="@+id/cell_info" android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</com.qualoutdoor.recorder.telephony.ViewCellInfo>
+	</LinearLayout>
+</ScrollView>

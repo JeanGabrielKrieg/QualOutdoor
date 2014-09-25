@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This completely describe the preferences screen -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_title_sampling_category">
+        <CheckBoxPreference
+            android:key="@string/pref_key_notification"
+            android:summary="@string/pref_summary_notification"
+            android:title="@string/pref_title_notification"
+            android:defaultValue="@bool/pref_default_notification"/>
+        <CheckBoxPreference
+            android:key="@string/pref_key_force_display_refresh"
+            android:title="@string/pref_title_force_display_refresh"
+            android:defaultValue="@bool/pref_default_force_display_refresh"/>
+        <com.qualoutdoor.recorder.settings.SeekBarPreference
+            android:key="@string/pref_key_display_refresh_rate"
+            android:title="@string/pref_title_display_refresh_rate"
+            android:dependency="@string/pref_key_force_display_refresh"
+            android:defaultValue="@integer/default_display_refresh_rate"
+            app:maxValue="@integer/max_display_refresh_rate"
+            app:minValue="@integer/min_display_refresh_rate"
+            app:interval="@integer/interval_display_refresh_rate"
+            app:unitsLeft="@string/pref_left_text_display_refresh_rate"
+            app:unitsRight="@string/pref_right_text_display_refresh_rate"/>
+        <com.qualoutdoor.recorder.settings.SeekBarPreference
+            android:key="@string/pref_key_sampling_rate"
+            android:title="@string/pref_title_sampling_rate"
+            android:defaultValue="@integer/default_sampling_rate"
+            app:maxValue="@integer/max_sampling_rate"
+            app:minValue="@integer/min_sampling_rate"
+            app:interval="@integer/interval_display_sampling_rate"
+            app:unitsLeft="@string/pref_left_text_sampling_rate"
+            app:unitsRight="@string/pref_right_text_sampling_rate"/>
+        <com.qualoutdoor.recorder.settings.SeekBarPreference
+            android:key="@string/pref_key_sample_history"
+            android:title="@string/pref_title_sample_history"
+            android:defaultValue="@integer/default_sample_history"
+            app:interval="@integer/interval_sample_history"
+            app:maxValue="@integer/max_sample_history"
+            app:minValue="@integer/min_sample_history"
+            app:unitsLeft="@string/pref_left_text_sample_history"
+            app:unitsRight="@string/pref_right_text_sample_history"/>
+        <PreferenceScreen android:title="@string/pref_title_screen_sample_details">
+            <!-- Descriptive text block -->
+            <Preference
+                android:persistent="false"
+                android:selectable="false"
+                android:summary="@string/pref_description_block_sample_details"/>
+            <CheckBoxPreference
+                android:key="@string/pref_key_sample_cell_id"
+                android:title="@string/pref_title_sample_cell_id"
+                android:defaultValue="@bool/pref_default_sample_cell_id"/>
+            <CheckBoxPreference
+                android:key="@string/pref_key_sample_signal_strength"
+                android:title="@string/pref_title_sample_signal_strength"
+                android:defaultValue="@bool/pref_default_sample_signal_strength"/>
+            <CheckBoxPreference
+                android:key="@string/pref_key_sample_call"
+                android:title="@string/pref_title_sample_call"
+                android:defaultValue="@bool/pref_default_sample_call"/>
+            <CheckBoxPreference
+                android:key="@string/pref_key_sample_upload"
+                android:title="@string/pref_title_sample_upload"
+                android:defaultValue="@bool/pref_default_sample_upload"/>
+            <CheckBoxPreference
+                android:key="@string/pref_key_sample_download"
+                android:title="@string/pref_title_sample_download"
+                android:defaultValue="@bool/pref_default_sample_download"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_title_network_category">
+        <CheckBoxPreference
+            android:key="@string/pref_key_automatic_data_upload"
+            android:title="@string/pref_title_automatic_data_upload"
+            android:defaultValue="@bool/pref_default_automatic_data_upload"/>
+
+        <EditTextPreference
+            android:key="@string/pref_key_minimum_upload_size"
+            android:title="@string/pref_title_minimum_upload_size"
+            android:dialogTitle="@string/pref_dialog_title_minimum_upload_size"
+            android:dependency="@string/pref_key_automatic_data_upload"
+            android:defaultValue="@integer/default_minimum_upload_size"
+            android:inputType="number"/>
+        <ListPreference
+            android:key="@string/pref_key_network_policy"
+            android:dependency="@string/pref_key_automatic_data_upload"
+            android:title="@string/pref_title_network_policy"
+            android:defaultValue="@string/pref_default_network_policy"
+            android:entries="@array/pref_list_entries_network_policy"
+            android:entryValues="@array/pref_list_values_network_policy"/>
+        <ListPreference
+            android:key="@string/pref_key_protocol"
+            android:title="@string/pref_title_protocol"
+            android:defaultValue="@string/pref_default_protocol"
+            android:entries="@array/pref_list_entries_protocol"
+            android:entryValues="@array/pref_list_values_protocol"/>
+    </PreferenceCategory>
+</PreferenceScreen>
